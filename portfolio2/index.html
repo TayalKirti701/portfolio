@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO WEBSITE</title>
+     <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div id="left">Kirti's Portfolio</div>
+                <div >
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Education</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+          <div id="main1">
+            <div class="row1">
+               <div class="header-text">
+                <p>FRONT END DESIGNER</p>
+                <h1>Hi,I'm <span class="multitext">Kirti  Tayal</span></h1>
+              </div>
+              <div class="col1">
+                <img class="img" src="dev.png">
+
+              </div>
+          </div>
+          </div>
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about_img.webp">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">ABOUT ME</h1>
+                    <p class="about-para"> I'm a passionate frontend developer with a strong desire to create visually stunning and user-friendly web experiences. I believe my strength is my attitude to take up challenges without thinking whether I will succeed or fail. </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                        
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>PROGRAMMING LANGUAGES</span>
+                            <br>
+                            
+                               <br> - C<br>
+                                <br> - Java<br>
+                                <br> - Python<br>
+                            
+                         </li>
+                         <br>
+                            <li> <span>WEB TECHNOLOGIES</span>
+                               <br>
+                                   <br>- Html<br>
+                                  <br>- Css<br>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="achievements">
+                        <ul>
+                            <li><span>HACKER RANK</span>
+                            <br>
+                                <br>◆ Java -> ★★★★<br>
+                                <br>◆ Python -> ★★★<br>
+                                <br>◆ C -> ★★★★<br>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div> 
+            </div>
+        </div>
+
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">EDUCATION</h1>
+            <div class="services-list">
+                <div>
+                    
+                    <h2><u> SCHOOLING</u></h2><br><br>
+                    <h4>I have completed my schooling from <br><br>DS PUBLIC SCHOOL,Muzaffarnagar<br> <br>with 91.2% in 10th & 93% in 12th.<br><br></h4>
+                    
+                    
+                </div>
+                <div>
+                    <h2><u> COLLEGE</u></h2><br><br>
+                    <h4>Currently,I am pursuing B.Tech in <br><br>computer science from<br><br> ABES ENGINEERING COLLEGE.</h4>
+
+                </div>
+                <div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">MY WORK</h1>
+            <div class="services-list work">
+                <div>   </div>
+                <div>   </div>
+                <div>   </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><img src="plane.png" height="30px"> tayalkirti68@gmail.com</p>
+                    <p><img src="contact.png" height="30px"> 7017XXXXXX</p>
+                    <div class="social-icon">
+                        <a href=""><img src="whatsapp.png" height="30px"></a>
+                        <a href=""><img src="insta.png" height="30px"></a>
+                        <a href=""><img src="linkedin.png" height="30px"></a>
+                    </div>
+                    <a href="" class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your emai" required>
+                        <textarea name="message" row="6" placeholder="Your Message"></textarea> 
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Kirti</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multitext",{
+            strings : ["Kirti Tayal","coder","Designer"],
+            loop:true,
+            typeSpeed:100,
+            backDelay:1550
+        })
+    </script>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       
+    }
+    
+    
+</script>
+
+
+</body>
+</html>
